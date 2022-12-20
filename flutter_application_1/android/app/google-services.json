@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "257313838147",
+    "project_id": "projeto-mobile-petshop",
+    "storage_bucket": "projeto-mobile-petshop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257313838147:android:bcb0d58795f6b73121b0f6",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257313838147-hk0h8ij3vbnimm83c4abvfcmovkvfpmv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjKk0wdRFtbG2Wx92quu1HcAvXn_-fWYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257313838147-hk0h8ij3vbnimm83c4abvfcmovkvfpmv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
