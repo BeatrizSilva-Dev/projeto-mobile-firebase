@@ -1,4 +1,4 @@
-import 'dart:ffi';
+import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -15,10 +15,12 @@ class CheckUser extends StatefulWidget {
 }
 
 class _CheckUserState extends State<CheckUser> {
+  StreamSubscription? streamSubscription;
   @override
   void initState() {
     super.initState();
-    FirebaseAuth.instance.authStateChanges().listen((User? user) {
+    streamSubscription =
+        FirebaseAuth.instance.authStateChanges().listen((User? user) {
       if (user == null) {
         Navigator.pushReplacement(
             context, MaterialPageRoute(builder: ((context) => LoginUser())));
@@ -34,5 +36,11 @@ class _CheckUserState extends State<CheckUser> {
     return Scaffold(
       body: Center(child: CircularProgressIndicator()),
     );
+  }
+
+  @override
+  void dispose() {
+    streamSubscription!.cancel();
+    super.dispose();
   }
 }
