@@ -29,6 +29,7 @@ class _LoginUserState extends State<LoginUser> {
               decoration: InputDecoration(label: Text('E-mail')),
             ),
             TextFormField(
+              obscureText: true,
               controller: _senhaControler,
               decoration: InputDecoration(label: Text('Senha')),
             ),
